@@ -1,0 +1,166 @@
+
+body {
+  margin: 0;
+  overflow: hidden;
+}
+
+#game-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(23, 23, 23);
+  touch-action: none;
+}
+
+.square {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-image: url('Coin.png');
+  background-size: cover;
+}
+.special-square {
+  background-image: url('Special-Coin.png');
+  width: 151px;
+  height: 151px;
+}
+.square::after {
+  content: "";
+  position: absolute;
+  top: -20px;
+  left: -20px;
+  right: -20px;
+  bottom: -20px;
+  }
+
+.square-square::after {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  right: -10px;
+  bottom: -10px;
+  }
+
+
+  img {
+    width: 50%;
+    height: auto;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    font-size: 24px;
+  }
+
+#score {
+  color: white;
+  font: message-box;
+  position: absolute;
+  top: 120px;
+  left: 10px;
+  font-size: 5em;
+}
+
+#timer {
+  color: white;
+  font: message-box;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 6em;
+}
+
+#game-over {
+  color: white;
+  font: message-box;
+  font-size: 6em;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+
+#restart-button {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 5em;
+  display: none;
+  background-color: #ffffff;
+  color: #000000;
+  padding: 40px 80px;
+  border: none;
+  cursor: pointer;
+  border-radius: 40px;
+  font-weight: 600;
+}
+
+body {
+  background-color: rgb(23,23,23);
+}
+
+h1 {
+    color: rgb(255, 255, 255);
+    font: message-box;
+    font-size: 2em; 
+    font-weight: bolder
+  }
+p {
+    color: rgb(255, 255, 255);
+    font: message-box;
+}
+
+h2 {
+    color: rgb(255, 255, 255);
+    font: message-box;
+    font-size: 1.5em; 
+    font-weight: bolder;
+  }
+
+h3 {
+    color: rgb(255, 255, 255);
+    font: message-box;
+    font-size: 1.17em;
+    font-weight: bolder;
+  }
+
+h4 {
+    color: rgb(255, 255, 255);
+    font: message-box;
+    font-size: 1em;
+    font-weight: bolder;
+  }
+
+h5 {
+    color: rgb(255, 255, 255);
+    font: message-box;
+	  font-size: .83em;
+    font-weight: bolder;
+  }
+
+h6 {
+    color: rgb(255, 255, 255);
+    font: message-box;
+    	font-size: .67em;
+      font-weight: bolder;
+  }
+
+li {
+    color: rgb(255, 255, 255);
+    font: message-box;
+    font-size: .80em;
+  }
+
+hr {
+    color: rgb(255, 255, 255);
+  }
+
+a {
+    color: rgb(255, 255, 255);
+    font: message-box;
+    font-weight: bold;
+    font-size: larger;
+    text-decoration: none;
+  }
